@@ -220,4 +220,6 @@ Keep in mind that one of our goals is to improve the company's promotion accepta
 <li><b>Age group</b> : Group age range of consumers.</li>
 <li><b>Total_campaignAcc</b> : Total campaign accepted per costumer.</li>
 <li><b>Number of purchase</b> : Total purchase done by the costumer.</li>
-</ul
+</ul>
+
+

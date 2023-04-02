@@ -139,7 +139,17 @@ More specifically, the project aims to achieve the following objectives: </p>
     
 <h2>Data Cleaning</h2>
     
-<p> The dataset doesn't need too much data cleaning, except some outliers that must to be treat.
+<p> The dataset doesn't need too much data cleaning, except some outliers that must to be treat.</p>
   
-<h3> Numerical Features Box Plot<h3>
+<h3> Numerical Features Box Plot</h3>
 
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Box_plt_NumericalFeatures.png?raw=true)
+
+<p>
+<b>Let's treat the outliers</b>
+
+<li><b>Income</b>: Very high values. As we have a normal distribution, we will keep 3 standard deviations.</li>
+
+<li><b>Year_birth</b>: Very low values. We will use 100 years as the maximum age.</li>
+
+</p>

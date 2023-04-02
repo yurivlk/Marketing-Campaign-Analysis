@@ -1,1 +1,1 @@
-# Marketing-Campaign-Analysis
+# Marketing-Campaign-Analysis - Yuri Velkis

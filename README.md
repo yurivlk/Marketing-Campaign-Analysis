@@ -154,22 +154,70 @@ More specifically, the project aims to achieve the following objectives: </p>
 
 </p>
 
-<style>
-  table {
-    width: 100%;
-  }
-  td {
-    width: 50%;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
-
+<h3>Box Plot after the treatment</h3>
 <table>
   <tr>
-    <td><img src="imagem1.png" alt="Imagem 1"></td>
-    <td><img src="imagem2.png" alt="Imagem 2"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Income_afterOut.png?raw=true" alt="Imagem 1"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Year_Birth_afterOut.png?raw=true" alt="Imagem 2"></td>
   </tr>
 </table>
+
+<h2>Exploratory Data Analysis</h2>
+
+<h3>Let's take a look at our numerical features distributions</h3>
+
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Numerical_features_Distribution.png?raw=true)
+
+<h3>Let's zoom in our products distribution as some interisting insights can be taken from the above overview</h3>
+
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Product_categories_distributions.png?raw=true)
+
+<h3>Insights</h3>
+
+These plots shows us interesting things:
+<ul>
+    <li>All of our products have a similar right-skewed distribution, which leads us to think that there is a long room for the company to increase sales in each product category.</li>
+    <li>As the count of costumer who spend 50 or less is very close for each category, it can means thst this is a group of customers that are not spending to much and we need to investigate this to ensure that is a customer profile and try to come up something to increase their activities. </li>
+    
+</ul>
+<p>
+We will talk about this later...
+
+Keep in mind that one of our goals is to improve the company's promotion acceptance rate and find room for revenue increase.
+
+</p>
+
+<b>Let's check if is there any correlation between the products category</b>
+
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Products_Corr_M.png?raw=true)
+
+<h3>Insights</h3>
+
+<b>Medium to High Correlations</b>
+
+<ul>
+    <li>Wines & MeatProducts</li>
+    <li>Fruits & MeatProducts</li>
+    <li>Fruits & FishProducts</li>
+    <li>Fruits & SweetProducts</li>
+    <li>MeatProducts & SweetProducts</li>
+    <li>MeatProducts & FishProducts</li>
+        
+</ul>
+
+  <p>
+  Here we can see a medium to high correlation between some products, which can helps the marketing team to build up strategies based in those relationship aiming to incrise the revenue, customer retention and campaigns performance.
+  </p>
+
+<h3>Feature Engineering</h3>
+
+<ul>
+<li><b>Age</b> : Customer's Age.</li>
+<li><b>Education_lvl</b> : Group education levels into High, Medium, and Low.</li>
+<li><b>Total_spent</b> : Total amount spent per customer.</li>
+<li><b>Acc_age</b> : We will create this column to know how long the customer has had their account.</li>
+<li><b>Marital_Status_grouped</b> : Group marital status as singles, couples, and widows.</li>
+<li><b>Age group</b> : Group age range of consumers.</li>
+<li><b>Total_campaignAcc</b> : Total campaign accepted per costumer.</li>
+<li><b>Number of purchase</b> : Total purchase done by the costumer.</li>
+</ul

@@ -153,3 +153,23 @@ More specifically, the project aims to achieve the following objectives: </p>
 <li><b>Year_birth</b>: Very low values. We will use 100 years as the maximum age.</li>
 
 </p>
+
+<style>
+  table {
+    width: 100%;
+  }
+  td {
+    width: 50%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+<table>
+  <tr>
+    <td><img src="imagem1.png" alt="Imagem 1"></td>
+    <td><img src="imagem2.png" alt="Imagem 2"></td>
+  </tr>
+</table>

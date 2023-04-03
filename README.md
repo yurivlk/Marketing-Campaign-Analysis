@@ -222,4 +222,32 @@ Keep in mind that one of our goals is to improve the company's promotion accepta
 <li><b>Number of purchase</b> : Total purchase done by the costumer.</li>
 </ul>
 
+<h3>Let's check these new distributions to have a better understand of the Customers' profile</h3>
 
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Categorical%20Features%20Distribution.png?raw=true)
+
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Income_Distribution_by%20_Category.png?raw=true)
+
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Spending_distributions%20by%20category.png?raw=true)
+
+<h3>Insights</h3>
+
+**Customer Profile**
+<ul>
+<li>Age Group: The database is composed mostly of middle-aged adults, followed by the elderly and young adults.</li>
+
+<li>Marital Status: The database is composed mostly of couples.</li>
+
+<li>Education Level: The database is composed mostly of individuals with a high education level.</li>
+
+</ul>
+
+**Income Profile**
+
+The average salary does not vary much among different age groups, marital status, and individuals with or without teenage children. However, this does not apply to customers with young children at home, who tend to earn more.
+
+**Spending Profile**
+
+The average spending of our customers does not vary much among different age groups, marital status, and individuals with teenage children. However, customers with young children tend to spend less, while customers with a higher education level tend to spend more.
+
+From the insights above, it can be observed that categorical variables mainly help us understand our customer profiles, except for the fact that customers with young children tend to spend less on average.

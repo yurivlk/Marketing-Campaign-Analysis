@@ -226,6 +226,8 @@ Keep in mind that one of our goals is to improve the company's promotion accepta
 
 ![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Categorical%20Features%20Distribution.png?raw=true)
 
+<h3>Bi variate analysis</h3> 
+
 ![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Income_Distribution_by%20_Category.png?raw=true)
 
 ![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Spending_distributions%20by%20category.png?raw=true)

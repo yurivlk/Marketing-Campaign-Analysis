@@ -253,3 +253,42 @@ The average salary does not vary much among different age groups, marital status
 The average spending of our customers does not vary much among different age groups, marital status, and individuals with teenage children. However, customers with young children tend to spend less, while customers with a higher education level tend to spend more.
 
 From the insights above, it can be observed that categorical variables mainly help us understand our customer profiles, except for the fact that customers with young children tend to spend less on average.
+
+
+<h3>Where do the customers spend the most, and via which channel?</h3>
+<table>
+  <tr>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Total_Sales_by_SC.png?raw=true"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Total_Spent_by_PC.png?raw=true"></td>
+  </tr>
+</table>
+
+<h3>Is there a significant correlation between the products and the sales channels?</h3>
+
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Products&SalesC_CorrM.png?raw=true)
+
+<h3>Insights</h3>
+
+We can see a significant correlation between wines/meats products and the sales channels such as catalog and in-store purchases, which provide insights to help the company increase revenue.
+
+There are several actions that can be taken based on this information:
+
+   `*Store organization: Presenting these products in a way that makes them more noticeable.`
+
+   `*Promotions: Creating linked promotions between meat products and wines for these sales channels.`
+
+   `*Marketing: Launching marketing campaigns aimed at promoting these products through the catalog and in-store sales channels.`
+   
+An interesting thing to look at is that the number of web visits is not correlated with the number of web purchases... It makes us raise questions like why our web traffic is not being converted to purchases?
+
+<h3>Let's try to find if is there any pattern on the customers who have accepted our campaigns..</h3>
+
+<h3>Do our categorical variables have a significant influence on accepting the campaigns?</h3>
+
+<table>
+  <tr>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Promo_Acc_by_Marital_S.png?raw=true"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Promo_Acc_by_Education_L.png?raw=true"></td>
+  </tr>
+</table>
+

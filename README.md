@@ -485,3 +485,23 @@ Silhoutte Score is: 0.5476329733619794
 **Let's vizualise the Sales channel Preference**
 
 ![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/SalesC_P_Clusters.png?raw=true)
+
+**Let's group our data set by clusters and check the mean of each numerial feature**
+
+![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Cluster_Numerical_Feature.png?raw=true)
+
+**Insights**
+
+We can see that cluster 2 and 0 have pretty similar caracteristics, except by the fact that the cluster number 2 has more soons...
+
+**Let's see the Promotion Acceptance Rate by Cluster**
+
+![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Promo_ACC_rate_Cl.png?raw=true)
+
+<h1>Conclusion</h1>
+
+**Conclusion**
+
+<p>In conclusion, the clustering analysis helped us identify the groups of customers that are more likely to respond positively to our promotion campaigns, as well as gain a better understanding of our customers' overall profiles. This information will be highly valuable for our marketing team to tailor their campaigns to each group's spending and behavioral patterns, ultimately resulting in improved campaign performance and customer engagement.</p>
+
+

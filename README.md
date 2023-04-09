@@ -292,3 +292,196 @@ An interesting thing to look at is that the number of web visits is not correlat
   </tr>
 </table>
 
+<h3>Insights</h3>
+
+<p>Based on the plots below, we can conclude that the campaigns were more accepted by couples and customers with higher levels of education. However, these observations do not provide any actionable insights as they simply reflect the underlying data distribution.</p>
+
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/MKT_C_Analysis.png?raw=true)
+
+<h3>Insights</h3>
+
+Customers who accepted promotions have higher incomes.
+
+Customers who spend more on wine and meat tend to have a higher acceptance rate.
+
+Promotions were more accepted by clients who prefer catalog and web purchases.
+
+Despite the poor performance of Campaign 3, this promotion seems to have attracted the largest customer profile in our dataset. This promotion is worth reviewing, as it could attract even more customers based on the profile of those who accepted it.
+
+Customers who accept our promotions tend to spend more. The company can consider developing a loyalty program to encourage customers who already participate in promotions to continue, and to encourage those who do not to start.
+
+___________________________________________________________________________________________________________________________________________________
+
+<h3>Machine Learning & Model Evaluation</h3>
+
+<p>Now let's apply the K-means algorithm to segment our customer database to help the marketing team make more efficient decisions based on the customers' profiles.</p>
+
+<h3>K Means Clustering without Dimensionality Reduction</h3>
+
+**Normalazing the Data**
+```python
+from sklearn.preprocessing import StandardScaler
+
+df_enc_norm = StandardScaler().fit_transform(df_enc)
+
+df_enc_scaled= pd.DataFrame(df_enc_norm, columns= df_enc.columns)
+
+```
+
+**Identifying the ideal number of clusters**
+
+```python
+from yellowbrick.cluster import KElbowVisualizer
+
+# Instantiate the clustering model and visualizer
+model = KMeans()
+visualizer = KElbowVisualizer(model, k=(1,10))
+
+visualizer.fit(df_enc_scaled)        # Fit the data to the visualizer
+visualizer.show()
+```
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/ML_Elbow.png?raw=true)
+
+**Fitting The Data**
+
+```python
+km= KMeans(n_clusters=3, init='k-means++',
+            n_init=10, max_iter=100, random_state=0)
+
+km.fit(df_enc_scaled)
+
+df["cluster_km_orig"] = km.labels_
+```
+**Evaluating the model**
+
+```python
+from sklearn.metrics import silhouette_score
+sc= silhouette_score(df_enc_scaled, km.labels_)
+print (f"Silhoutte Score is: {sc}")
+
+Silhoutte Score is: 0.22149767133501388
+```
+
+**Cluster without Dimensionality Visuzalization**
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Cluster1_Vis.png?raw=true)
+
+
+**K Means Clustering with Dimensionality Reduction**
+
+```python
+from sklearn.decomposition import PCA
+
+pca = PCA()
+_ = pca.fit_transform(df_enc_scaled)
+PC_components = np.arange(pca.n_components_) + 1
+```
+**Understanding the variance of our features**
+
+```python
+_ = sns.set(style='whitegrid', font_scale=1.2)
+fig, ax = plt.subplots(figsize=(10, 7))
+_ = sns.barplot(x=PC_components, y=pca.explained_variance_ratio_, color='b')
+_ = sns.lineplot(x=PC_components-1, y=np.cumsum(pca.explained_variance_ratio_), color='black', linestyle='-', linewidth=2, marker='o', markersize=8)
+
+plt.title('Scree Plot')
+plt.xlabel('N-th Principal Component')
+plt.ylabel('Variance Explained')
+plt.ylim(0, 1)
+plt.show()
+```
+![Texto_alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Variance_PCA.png?raw=true)
+
+**Reducing to 3 Components**
+
+```python
+from sklearn.decomposition import PCA
+
+pca = PCA(n_components=3)
+
+pca.fit(df_enc_scaled)
+PCA_df = pd.DataFrame(pca.transform(df_enc_scaled), columns=(["col1","col2",'col3']))
+```
+
+**Fitting in The Data**
+
+```python
+#Clustering the new reduced DF
+
+km= KMeans(n_clusters=3, init='k-means++',
+            n_init=10, max_iter=100, random_state=0)
+
+km.fit(PCA_df)
+
+from mpl_toolkits.mplot3d import Axes3D
+
+#Plotting the clusters
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(PCA_df['col1'], PCA_df['col2'], PCA_df['col3'], s=40, c= km.labels_, marker='o' ,cmap = 'plasma')
+ax.set_xlabel('PC1')
+ax.set_ylabel('PC2')
+ax.set_zlabel('PC3')
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/97385851/230797086-31c7911b-ef5e-405c-8b52-f2c47a36175a.png)
+
+
+**Evaluating the model**
+
+```python
+from sklearn.metrics import silhouette_score
+#Evaluating the cluster
+sc= silhouette_score(PCA_df, km.labels_)
+print (f"Silhoutte Score is: {sc}")
+
+Silhoutte Score is: 0.4478819732216168
+```
+
+**Reducing to 2 Components**
+
+```python
+pca = PCA(n_components=2)
+
+pca.fit(df_enc_scaled)
+PCA_df = pd.DataFrame(pca.transform(df_enc_scaled), columns=(["col1","col2"]))
+PCA_df.describe().T
+```
+
+**Fitting in The Data**
+```python
+km= KMeans(n_clusters=3, init='k-means++',
+            n_init=10, max_iter=100, random_state=42)
+
+km.fit(PCA_df)
+
+df['cluster_km_orig_pca2'] = km.labels_
+```
+
+![image](https://user-images.githubusercontent.com/97385851/230797215-31e0b981-b087-408d-9324-2a068db0b53d.png)
+
+**Evaluating the model**
+```python
+sc= silhouette_score(PCA_df, km.labels_)
+print (f"Silhoutte Score is: {sc}")
+
+Silhoutte Score is: 0.5476329733619794
+```
+
+<h3>Insights</h3>
+
+<p>We could notice that with the dimensionality redution for two componentes raised our Silhouete score significantly, therefore let's use this to visualize the clusters and try to understand each cluster caracteristics</p>
+
+**Let's explore our customer segmentation...**
+
+**Clusters Distribution**
+
+![image](https://user-images.githubusercontent.com/97385851/230798039-1e36c426-20c1-46cc-b282-3b8e4b217c7b.png)
+
+**Let's vizualise the spending profile of each cluster**
+
+![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Spending_P_Clusters.png?raw=true)
+
+**Let's vizualise the Sales channel Preference**
+
+![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/SalesC_P_Clusters.png?raw=true)

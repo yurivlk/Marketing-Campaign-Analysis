@@ -492,7 +492,7 @@ Silhoutte Score is: 0.5476329733619794
 
 **Insights**
 
-We can see that cluster 2 and 0 have pretty similar caracteristics, except by the fact that the cluster number 2 has more soons...
+We can see that clusters 2 and 0 have pretty similar characteristics, except for the fact that cluster 2 has more sons...
 
 **Let's see the Promotion Acceptance Rate by Cluster**
 

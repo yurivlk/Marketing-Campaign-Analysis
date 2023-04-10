@@ -361,9 +361,6 @@ print (f"Silhoutte Score is: {sc}")
 
 Silhoutte Score is: 0.22149767133501388
 ```
-
-**Cluster without Dimensionality Visuzalization**
-
 ![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Cluster1_Vis.png?raw=true)
 
 

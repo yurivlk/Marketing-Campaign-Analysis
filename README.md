@@ -143,7 +143,7 @@ More specifically, the project aims to achieve the following objectives: </p>
   
 <h3> Numerical Features Box Plot</h3>
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Box_plt_NumericalFeatures.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Box_plt_NumericalFeatures.png?raw=true)
 
 <p>
 <b>Let's treat the outliers</b>
@@ -157,8 +157,8 @@ More specifically, the project aims to achieve the following objectives: </p>
 <h3>Box Plot after the treatment</h3>
 <table>
   <tr>
-    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Income_afterOut.png?raw=true" alt="Imagem 1"></td>
-    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Year_Birth_afterOut.png?raw=true" alt="Imagem 2"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Income_afterOut.png?raw=true" alt="Imagem 1"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Year_Birth_afterOut.png?raw=true" alt="Imagem 2"></td>
   </tr>
 </table>
 
@@ -166,11 +166,11 @@ More specifically, the project aims to achieve the following objectives: </p>
 
 <h3>Let's take a look at our numerical features distributions</h3>
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Numerical_features_Distribution.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Numerical_features_Distribution.png?raw=true)
 
 <h3>Let's zoom in our products distribution as some interisting insights can be taken from the above overview</h3>
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Product_categories_distributions.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Product_categories_distributions.png?raw=true)
 
 <h3>Insights</h3>
 
@@ -189,7 +189,7 @@ Keep in mind that one of our goals is to improve the company's promotion accepta
 
 <b>Let's check if is there any correlation between the products category</b>
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Products_Corr_M.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Products_Corr_M.png?raw=true)
 
 <h3>Insights</h3>
 
@@ -224,13 +224,13 @@ Keep in mind that one of our goals is to improve the company's promotion accepta
 
 <h3>Let's check these new distributions to have a better understand of the Customers' profile</h3>
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Categorical%20Features%20Distribution.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Categorical%20Features%20Distribution.png?raw=true)
 
 <h3>Bi variate analysis</h3> 
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Income_Distribution_by%20_Category.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Income_Distribution_by%20_Category.png?raw=true)
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Spending_distributions%20by%20category.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Spending_distributions%20by%20category.png?raw=true)
 
 <h3>Insights</h3>
 
@@ -258,14 +258,14 @@ From the insights above, it can be observed that categorical variables mainly he
 <h3>Where do the customers spend the most, and via which channel?</h3>
 <table>
   <tr>
-    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Total_Sales_by_SC.png?raw=true"></td>
-    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Total_Spent_by_PC.png?raw=true"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Total_Sales_by_SC.png?raw=true"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Total_Spent_by_PC.png?raw=true"></td>
   </tr>
 </table>
 
 <h3>Is there a significant correlation between the products and the sales channels?</h3>
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Products&SalesC_CorrM.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Products&SalesC_CorrM.png?raw=true)
 
 <h3>Insights</h3>
 
@@ -287,8 +287,8 @@ An interesting thing to look at is that the number of web visits is not correlat
 
 <table>
   <tr>
-    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Promo_Acc_by_Marital_S.png?raw=true"></td>
-    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Promo_Acc_by_Education_L.png?raw=true"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Promo_Acc_by_Marital_S.png?raw=true"></td>
+    <td><img src="https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Promo_Acc_by_Education_L.png?raw=true"></td>
   </tr>
 </table>
 
@@ -296,7 +296,7 @@ An interesting thing to look at is that the number of web visits is not correlat
 
 <p>Based on the plots below, we can conclude that the campaigns were more accepted by couples and customers with higher levels of education. However, these observations do not provide any actionable insights as they simply reflect the underlying data distribution.</p>
 
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/MKT_C_Analysis.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/MKT_C_Analysis.png?raw=true)
 
 <h3>Insights</h3>
 
@@ -340,7 +340,7 @@ visualizer = KElbowVisualizer(model, k=(1,10))
 visualizer.fit(df_enc_scaled)        # Fit the data to the visualizer
 visualizer.show()
 ```
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/ML_Elbow.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/ML_Elbow.png?raw=true)
 
 **Fitting The Data**
 
@@ -363,7 +363,7 @@ Silhoutte Score is: 0.22149767133501388
 ```
 
 **Cluster without Dimensionality Visuzalization**
-![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Cluster1_Vis.png?raw=true)
+![Texto Alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Cluster1_Vis.png?raw=true)
 
 
 **K Means Clustering with Dimensionality Reduction**
@@ -389,7 +389,7 @@ plt.ylabel('Variance Explained')
 plt.ylim(0, 1)
 plt.show()
 ```
-![Texto_alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Variance_PCA.png?raw=true)
+![Texto_alternativo](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Variance_PCA.png?raw=true)
 
 **Reducing to 3 Components**
 
@@ -480,15 +480,15 @@ Silhoutte Score is: 0.5476329733619794
 
 **Let's vizualise the spending profile of each cluster**
 
-![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Spending_P_Clusters.png?raw=true)
+![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Spending_P_Clusters.png?raw=true)
 
 **Let's vizualise the Sales channel Preference**
 
-![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/SalesC_P_Clusters.png?raw=true)
+![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/SalesC_P_Clusters.png?raw=true)
 
 **Let's group our data set by clusters and check the mean of each numerial feature**
 
-![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Cluster_Numerical_Feature.png?raw=true)
+![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Cluster_Numerical_Feature.png?raw=true)
 
 **Insights**
 
@@ -496,7 +496,7 @@ We can see that clusters 2 and 0 have pretty similar characteristics, except for
 
 **Let's see the Promotion Acceptance Rate by Cluster**
 
-![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Promo_ACC_rate_Cl.png?raw=true)
+![image](https://github.com/yurivlk/Marketing-Campaign-Analysis/blob/main/Pictures/Promo_ACC_rate_Cl.png?raw=true)
 
 <h1>Conclusion</h1>
 
